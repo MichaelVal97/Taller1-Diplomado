@@ -13,7 +13,7 @@ jobs:
 
       - name: Verificar existencia de archivos base
         run: |
-          if [ ! -f home.html ] || [ ! -f styles.css ] || [ ! -f listadoUsuarios.html ]; then
+          if [ ! -f home.html ] || [ ! -f style.css ] || [ ! -f listadoUsuarios.html ]; then
             echo ' Archivos base no encontrados.'
             exit 1
           else
