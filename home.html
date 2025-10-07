@@ -1,11 +1,35 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Prueba Básica</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+  <main class="container">
+    <header>
+      <h1>Proyecto de Prueba</h1>
+      <p class="subtitle">HTML + CSS mínimo para comprobar flujo de trabajo</p>
+    </header>
+
+    <section>
+      <h2>Sección de ejemplo</h2>
+      <p>Este es un párrafo de prueba. Modifica el archivo <code>style.css</code> para ver cambios en vivo.</p>
+      <button id="testBtn">Haz clic</button>
+    </section>
+
+    <footer>
+      <p>© <span id="year"></span> Mai</p>
+    </footer>
+  </main>
+
+  <script>
+    // Pequeño script para comprobar interacción
+    document.getElementById('testBtn').addEventListener('click', () => {
+      alert('Botón funcionando ✅');
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
